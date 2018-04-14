@@ -64,6 +64,7 @@ var slider = {
             if (arrBox[i].offsetLeft == 0) {
                 arrBox[i].classList.remove("first");
                 arrBox[i].style.left = translate + "px";
+
             }
             if (arrBox[i].offsetLeft == 175) {
 
@@ -82,6 +83,7 @@ var slider = {
             if (arrBox[i].offsetLeft == 525) {
                 arrBox[i].classList.add("last");
                 arrBox[i].style.left = translate * (arrBox.length - 1) + "px";
+
             }
 
         }
