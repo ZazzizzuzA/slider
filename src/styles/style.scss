@@ -13,15 +13,11 @@ body {
     height: 100vh;
     &__item-slider {
         position: relative;
-        width: 900px;
+        width: 800px;
         height: 175px;
         overflow: hidden;
         text-align: center;
         transition: all 800ms ease-in-out;
-        .hide {
-            opacity: 0;
-            z-index: -1;
-        }
     }
     &__item-slide {
         border-radius: 50%;
@@ -42,11 +38,15 @@ body {
     }
     .last {
         position: absolute;
-        right: -150px;
+        right: -160px;
+        opacity: 0;
+        z-index: -1;
     }
     .first {
         position: absolute;
-        left: -150px;
+        left: -160px;
+        opacity: 0;
+        z-index: -1;
     }
     &__button {
         border: 2px solid rgb(245, 248, 247);
